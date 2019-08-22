@@ -1,67 +1,76 @@
 <!DOCTYPE html>
-<html>
+<html lang="en-us">
+<meta charset="UTF-8">
 
 <head>
-    <title>Portfolio</title>
+
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
     <link href="css/style.css" rel="stylesheet" type="assets/css/style.css">
+    <!--AOS-->
+    <!--CDN Source-CSS for AOS-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!--CDN Sources-JS-->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!--AOS End-->
+
+    <style>
+        nav ul li a {
+            color: black;
+            font-size: 18px;
+        }
+    </style>
+    <title>Alan Gomero</title>
 </head>
 
-<style>
-    ul {
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
-    }
-    
-    li {
-        display: inline;
-    }
-    
-    img {
-        float: left;
-    }
-    
-    p.description {
-        border: 1px solid red;
-        padding: 35px;
-        color: #777777;
-        font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
-    }
-    
-    h1 {
-        color: #4aaaa5;
-        font-family: 'Georgia', Times, Times New Roman, serif;
-    }
-</style>
+<!--Coloring the background blue-->
 
-<body>
+<body style="background-color:rgb(61, 61, 230);">
 
-    <body background="email-pattern.png">
-        <!--Displays the navigation bar-->
-        <div class="nav">
+    <!--Coloring End-->
 
-            <ul>
-                <li><a href="index.html">About Me </a></li>
-                <li><a href="contact.html">Contact </a></li>
-                <li><a href="portfolio.html">Portfolio </a></li>
+    <!--Nav bar for the name, about, portfolio, and contact-->
+    <nav>
+        <div class="nav-wrapper amber lighten-2 ">
+
+
+            <a href="index.html" class="brand-logo black-text">Alan Gomero</a>
+            <ul id="nav-mobile " class="right hide-on-med-and-down ">
+                <li><a href="#aboutPage">About</a></li>
+                <li><a href="#portfolioPage ">Portfolio</a></li>
+                <li><a href="#contactPage">Contact</a></li>
             </ul>
+
+
+        </div>
+    </nav>
+    <!--Navbar End-->
+    <h1>Welcome</h1>
+    <div id='container'>
+        <div data-aos="fade-right">
+            <image src="https://static.wixstatic.com/media/d60d1a_84b78647b14d45d4b60cb5362492ecea.png/v1/fill/w_407,h_407,al_c,q_80,usm_0.66_1.00_0.01/d60d1a_84b78647b14d45d4b60cb5362492ecea.webp " width="200px " alt="My Photo " align="middle" hspace="20" style='float: left;'
+                class="circle responsive-img z-depth-5"></image>
         </div>
 
-        <h1>About Me</h1>
-
-        <image src="https://static.wixstatic.com/media/d60d1a_84b78647b14d45d4b60cb5362492ecea.png/v1/fill/w_407,h_407,al_c,q_80,usm_0.66_1.00_0.01/d60d1a_84b78647b14d45d4b60cb5362492ecea.webp" width="200px" alt="My Photo"></image>
-
-        <p class="description">Hello! My name is Alan Gomero. I am new into using html and css in general! I am currently working at Foxconn as a IQA (Incoming Quality Assurance) My favorite hobbies are doing some digital art paintings, and cooking some delicious food! Fun
+        <p>Hello! My name is Alan Gomero. I am new into using html and css in general! I am currently working at Foxconn as a IQA (Incoming Quality Assurance) My favorite hobbies are doing some digital art paintings, and cooking some delicious food! Fun
             fact: I'm basically the tallest member of the family! Hard to believe!</p>
-
-        <div class="footer">
-
-
-            <h3>Copyright 2019</h3>
+    </div>
 
 
-        </div>
-    </body>
-    <p></p>
+    <footer class="section blue-grey darken-4 white-text center">
+        Copyright &copy; 2019 Alan Gomero
+    </footer>
+    <script>
+        AOS.init({
+            offset: -200,
+            duration: 700,
+        });
+    </script>
+
+
 
 </html>
